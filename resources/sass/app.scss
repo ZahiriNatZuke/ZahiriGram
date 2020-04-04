@@ -1,0 +1,50 @@
+// Fonts
+//@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+@font-face {
+    font-family: "Roboto Light";
+    src: url('../fonts/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: "Alex Brush";
+    src: url('../fonts/Alex Brush.ttf');
+}
+
+// Variables
+@import 'variables';
+@import "./resources/fontawesome-free-5.12.0-web/scss/variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import "./resources/fontawesome-free-5.12.0-web/scss/fontawesome";
+@import "./resources/fontawesome-free-5.12.0-web/scss/regular";
+@import "./resources/fontawesome-free-5.12.0-web/scss/solid";
+@import "./resources/fontawesome-free-5.12.0-web/scss/v4-shims";
+
+html, body {
+    font-family: 'Roboto Light', sans-serif;
+}
+
+.navbar-brand {
+    font-family: "Alex Brush", serif !important;
+}
+
+.title {
+    font-family: "Alex Brush", serif !important;
+    font-size: 140px;
+}
+
+.welcome-title {
+    font-size: 52px;
+    font-family: "Alex Brush", serif !important;
+}
+
+button.btn, a.btn, label.custom-control-label {
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+label.col-form-label {
+    font-weight: bold;
+}
