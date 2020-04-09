@@ -24,6 +24,8 @@ Vue.component('follow-link', require('./components/FollowLink.vue').default);
 Vue.component('comment-modal', require('./components/CommentModal.vue').default);
 Vue.component('toast', require('./components/Toast.vue').default);
 Vue.component('like-link', require('./components/LikeLink.vue').default);
+Vue.component('search-form', require('./components/SearchForm.vue').default);
+Vue.component('view-search', require('./components/ViewSearch.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

@@ -4,7 +4,7 @@
     <div class="container px-5 pt-5">
         <div class="row">
             <div class="col-8">
-                <img src="/storage/{{$post->image}}" alt="{{explode('/',$post->image)[2]}}" class="w-100"
+                <img src="/storage/{{$post->image}}" alt="{{explode('/',$post->image)[2]}}" class="w-100 rounded"
                      style="max-height: 450px">
             </div>
             <div class="col-4">

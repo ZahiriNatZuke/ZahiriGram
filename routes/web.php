@@ -15,7 +15,6 @@ use App\Mail\NewUserWelcomeMail;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-
 Auth::routes();
 
 //Route::get('/email', function () {
@@ -29,6 +28,7 @@ Route::get('/', function () {
 Route::get('/post', 'PostsController@index')->name('post.index');
 Route::get('/post/create', 'PostsController@create')->name('post.create');
 Route::get('/post/{post}', 'PostsController@show')->name('post.show');
+Route::get('/post/search/{query}', 'PostsController@search')->name('post.search');
 Route::post('/post', 'PostsController@store')->name('post.store');
 
 Route::get('/profile/{user}', 'ProfilesController@index')->name('profile.show');

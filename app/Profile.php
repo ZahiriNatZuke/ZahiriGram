@@ -12,6 +12,7 @@ class Profile extends Model
     protected $table = 'profiles';
     protected $primaryKey = 'id';
 
+
     /**
      * The attributes that are mass assignable.
      *

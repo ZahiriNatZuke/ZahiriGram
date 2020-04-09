@@ -51,13 +51,7 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="navbar-nav ml-auto">
                     @auth
-                        <form class="form-inline pt-3">
-                            <input class="form-control mr-sm-2" type="search" aria-label="Search"
-                                   style="width: 300px">
-                            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
-                                Search
-                            </button>
-                        </form>
+                        <search-form></search-form>
                     @endauth
                 </ul>
                 <!-- Right Side Of Navbar -->
@@ -109,9 +103,18 @@
         </div>
     </nav>
     <main id="main">
-        @yield('content')
+        <div id="main-container">
+            @yield('content')
+        </div>
+        <view-search id="search-container"></view-search>
     </main>
 </div>
+<script type="application/javascript">
+    $(document).ready(function () {
+        $('#searchInput').val('');
+        sessionStorage.clear();
+    })
+</script>
 </body>
 </html>
 

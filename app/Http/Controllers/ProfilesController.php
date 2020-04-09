@@ -37,15 +37,14 @@ class ProfilesController extends Controller
     {
         $follows = (auth()->user()) ? auth()->user()->following->contains($user->id) : false;
 
-//        $postsCount = $user->posts->count();
         $postsCount = Cache::remember('count.posts' . $user->id, now()->addSeconds(30), function () use ($user) {
             return $user->posts->count();
         });
-//        $followingCount = $user->profile->followers->count();
+
         $followingCount = Cache::remember('count.following' . $user->id, now()->addSeconds(30), function () use ($user) {
             return $user->profile->followers->count();
         });
-//        $followersCount = $user->following->count();
+
         $followersCount = Cache::remember('count.followers' . $user->id, now()->addSeconds(30), function () use ($user) {
             return $user->following->count();
         });

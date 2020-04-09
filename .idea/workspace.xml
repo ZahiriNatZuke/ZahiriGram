@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b33eff79-f3e7-4d0e-8dfa-cc0ba73d4992" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,11 +43,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/database/migrations/2020_04_01_110541_create_comments_table.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/User.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/resources/js/components/Toast.vue" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/database/migrations/2020_04_01_110541_create_comments_table.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/resources/views/posts/index.blade.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" root2="SKIP_INSPECTION" />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
@@ -142,7 +141,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1ZvNCBcqzOCshES9D3ByLbqDqzz" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -152,8 +153,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/node_modules" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.13.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Streaming-Symfony" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -177,12 +180,24 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="watch" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="watch" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.watch" />
         <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="1" Folder0="D:\Programas\PhpStorm 2019 W 96 EN\Plugins PHP Storm" CustomDictionaries="1" CustomDictionary0="D:\Programas\PhpStorm 2019 W 96 EN\Plugins PHP Storm\spanish.dic" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="project-level" UseSingleDictionary="true" />
   <component name="StructureViewFactory">
     <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
   </component>
@@ -202,6 +217,14 @@
       <workItem from="1585856270777" duration="22034000" />
       <workItem from="1585938588269" duration="17419000" />
       <workItem from="1586024465498" duration="12208000" />
+      <workItem from="1586207635808" duration="182000" />
+      <workItem from="1586207840519" duration="560000" />
+      <workItem from="1586208602932" duration="733000" />
+      <workItem from="1586221358782" duration="16234000" />
+      <workItem from="1586372294288" duration="14174000" />
+      <workItem from="1586393309192" duration="67000" />
+      <workItem from="1588441588296" duration="7634000" />
+      <workItem from="1588558062173" duration="1129000" />
     </task>
     <servers />
   </component>
@@ -213,33 +236,57 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#Composer/0.0.1366.728@0.0.1366.728" timestamp="1585715543348" />
+    <state x="275" y="0" width="816" height="728" key="#Intentions" timestamp="1586208316194">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="0" width="816" height="728" key="#Intentions/0.0.1366.728@0.0.1366.728" timestamp="1586208316194" />
+    <state x="275" y="22" key="#Notifications" timestamp="1588441601479">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="22" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1588441601479" />
+    <state x="275" y="22" key="#Plugins" timestamp="1586208314782">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="22" key="#Plugins/0.0.1366.728@0.0.1366.728" timestamp="1586208314782" />
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1586028564979">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1586028564979" />
-    <state width="1323" height="511" key="GridCell.Tab.0.bottom" timestamp="1586039494360">
+    <state x="463" y="109" key="FileChooserDialogImpl" timestamp="1586393374311">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="511" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586039494360" />
-    <state width="1323" height="511" key="GridCell.Tab.0.center" timestamp="1586039494360">
+    <state x="463" y="109" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586393374311" />
+    <state width="1323" height="142" key="GridCell.Tab.0.bottom" timestamp="1586318561207">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="511" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586039494360" />
-    <state width="1323" height="511" key="GridCell.Tab.0.left" timestamp="1586039494360">
+    <state width="1323" height="142" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586318561207" />
+    <state width="1323" height="142" key="GridCell.Tab.0.center" timestamp="1586318561207">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="511" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586039494360" />
-    <state width="1323" height="511" key="GridCell.Tab.0.right" timestamp="1586039494360">
+    <state width="1323" height="142" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586318561207" />
+    <state width="1323" height="142" key="GridCell.Tab.0.left" timestamp="1586318561207">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="511" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586039494360" />
+    <state width="1323" height="142" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586318561207" />
+    <state width="1323" height="142" key="GridCell.Tab.0.right" timestamp="1586318561207">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="142" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586318561207" />
+    <state x="186" y="10" key="SettingsEditor" timestamp="1586208705360">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="186" y="10" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586208705360" />
+    <state x="391" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1586207636918">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="391" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586207636918" />
     <state x="343" y="53" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1585873062568">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="343" y="53" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1585873062568" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1586037930366">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1586379391972">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1586037930366" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1586379391972" />
   </component>
 </project>

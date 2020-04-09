@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Post;
+use App\User;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -10,7 +11,6 @@ use Illuminate\Routing\Redirector;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
 use Illuminate\View\View;
-use Illuminate\Support\Collection;
 
 class PostsController extends Controller
 {
@@ -31,8 +31,12 @@ class PostsController extends Controller
         $users->push(auth()->user()->id);
 
         $posts = Post::whereIn('user_id', $users)->with('user')->latest()->get();
+        $welcome = User::query()
+            ->where('id', 'NOT LIKE', Auth::user()->id)
+            ->with('profile')->with('following')
+            ->take(10)->get();
 
-        return view('posts.index', compact('posts'));
+        return view('posts.index', compact('posts', 'welcome'));
     }
 
     /**
@@ -76,4 +80,20 @@ class PostsController extends Controller
 
         return view('posts.show', compact('post', 'follows', 'likes'));
     }
+
+    public function search($query)
+    {
+        $users = User::query()
+            ->where('name', 'LIKE', '%' . $query . '%')
+            ->orWhere('username', 'LIKE', '%' . $query . '%')
+            ->with('profile')
+            ->with('following')
+            ->latest()->get();
+        $posts = Post::query()
+            ->where('caption', 'LIKE', '%' . $query . '%')
+            ->with('user')
+            ->latest()->get();
+        return response()->json(['posts' => $posts, 'users' => $users, 'me' => auth()->user()->id], 200);
+    }
+
 }

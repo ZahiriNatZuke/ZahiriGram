@@ -50,7 +50,7 @@
             @foreach($user->posts as $post)
                 <div class="col-4 pb-4">
                     <a href="{{route('post.show',['post'=>$post->id])}}">
-                        <img class="w-100" src="/storage/{{ $post->image }}" alt=""
+                        <img class="w-100 rounded" src="/storage/{{ $post->image }}" alt=""
                              style="height: 200px">
                     </a>
                 </div>
