@@ -83,11 +83,17 @@ class ProfilesController extends Controller
             'title' => 'required',
             'description' => 'required',
             'url' => ['required', 'url'],
-            'image' => 'image',
+            'image' => ['image', 'file']
         ]);
 
         if (request('image')) {
+
+            $imageOld = storage_path('app\\public\\' . str_replace('/', '\\', $user->profile->image));
+            if (file_exists($imageOld) && @getimagesize($imageOld))
+                unlink($imageOld);
+
             $path = request('image')->store('uploads/profile-' . auth()->user()->id, 'public');
+
             $data['image'] = $path;
         }
 

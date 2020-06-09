@@ -9,7 +9,10 @@ bootstrap/compiled.php
 app/storage/
 
 # Laravel 5 & Lumen specific
-public/storage
+public/storage/uploads/*
+!public/storage/uploads/wXgHlUZxP82XAx5MWiEUhLP6DWdoZg956HH8gvbJ.png
+storage/app/public/uploads/
+!storage/app/public/uploads/wXgHlUZxP82XAx5MWiEUhLP6DWdoZg956HH8gvbJ.png
 public/hot
 storage/*.key
 .env

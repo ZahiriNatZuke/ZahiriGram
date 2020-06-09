@@ -57,7 +57,7 @@ class PostsController extends Controller
     {
         $data = $this->validate($request, [
             'caption' => 'required',
-            'image' => ['required', 'image']
+            'image' => ['required', 'image', 'file']
         ]);
 
         $path = request('image')->store('uploads/user-' . auth()->user()->id, 'public');
