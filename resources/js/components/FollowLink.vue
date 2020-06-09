@@ -1,5 +1,5 @@
 <template>
-    <a href="#" class="text-primary pl-2 pb-1 font-weight-bold text-uppercase" @click="followUser"
+    <a href="#" target="_blank" class="text-primary pl-2 pb-1 font-weight-bold text-uppercase" @click="followUser"
        v-text="linkText"></a>
 </template>
 

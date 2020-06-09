@@ -1,7 +1,6 @@
 <template>
     <form class="form-inline pt-3">
-        <input id="searchInput" class="form-control mr-sm-2" type="search" aria-label="Search" required
-               style="width: 300px">
+        <input id="searchInput" class="form-control mr-sm-2" type="search" aria-label="Search" required>
         <button class="btn btn-outline-dark my-2 my-sm-0" @click="sendSearchQuery" type="submit"
                 onclick="event.preventDefault();">
             Search
@@ -24,8 +23,8 @@
                         console.log(error);
                     }).finally(() => {
                         if (sessionStorage.getItem('users') || sessionStorage.getItem('posts')) {
-                            $('#main-container').css('display', 'none');
-                            $('#search-container').css('display', '');
+                            $('#main-container').addClass('d-none');
+                            $('#search-container').removeClass('d-none');
                         }
                     });
             }
@@ -34,5 +33,7 @@
 </script>
 
 <style scoped>
-
+    #searchInput {
+        width: 300px;
+    }
 </style>

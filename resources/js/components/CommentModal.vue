@@ -1,6 +1,5 @@
 <template>
-    <div class="modal fade" tabindex="-1" role="dialog"
-         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-body">
@@ -9,8 +8,7 @@
                     </div>
                     <div class="form-group">
                         <textarea name="body" :id="id" rows="3" type="text" autofocus
-                                  style="resize: none" class="form-control" required></textarea>
-
+                                  style="resize: none" class="form-control customized-scroll" required></textarea>
                     </div>
                     <div class="form-group row mb-0">
                         <div class="col-md-6 offset-md-4">

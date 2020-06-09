@@ -1,5 +1,5 @@
 <template>
-    <div class="">
+    <div class="cur-pointer">
         <i :class="linkClass" @click="likePost"></i>
     </div>
 </template>
@@ -37,5 +37,7 @@
 </script>
 
 <style scoped>
-
+    .cur-pointer {
+        cursor: pointer;
+    }
 </style>

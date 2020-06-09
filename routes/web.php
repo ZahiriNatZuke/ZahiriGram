@@ -11,15 +11,10 @@
 |
 */
 
-use App\Mail\NewUserWelcomeMail;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Auth::routes();
-
-//Route::get('/email', function () {
-//    return new NewUserWelcomeMail();
-//});
 
 Route::get('/', function () {
     return view('welcome');

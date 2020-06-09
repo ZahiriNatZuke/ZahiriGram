@@ -31,7 +31,7 @@
     </style>
 </head>
 <body>
-<div id="app">
+<div id="app" class="customized-scroll">
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand d-flex" @guest href="{{ route('home') }}" @else href="{{ route('post.index') }}"
@@ -109,12 +109,6 @@
         <view-search id="search-container"></view-search>
     </main>
 </div>
-<script type="application/javascript">
-    $(document).ready(function () {
-        $('#searchInput').val('');
-        sessionStorage.clear();
-    })
-</script>
 </body>
 </html>
 

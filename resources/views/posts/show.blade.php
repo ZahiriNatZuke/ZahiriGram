@@ -48,7 +48,7 @@
                         {{$post->caption}}
                     </p>
                 </div>
-                <ul id="list-post-{{ $post->id }}" class="pl-2 py-2 m-0 list-unstyled mt-2 card"
+                <ul id="list-post-{{ $post->id }}" class="pl-2 py-2 m-0 list-unstyled mt-2 card customized-scroll"
                     style="max-height: 250px; overflow-x: paged-x; overflow-y: scroll;@if($post->comments->count() == 0) display: none @endif">
                     @foreach($post->comments as $comment)
                         <li class="d-flex">

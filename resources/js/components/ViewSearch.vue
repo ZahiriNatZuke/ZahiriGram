@@ -1,5 +1,5 @@
 <template>
-    <div class="container px-5 pt-2" style="display: none">
+    <div class="container px-5 pt-2 d-none">
         <button type="button" class="ml-2 mb-1 close" aria-label="Close" @click="hideViewSearch">
             <span aria-hidden="true">&times;</span>
         </button>
@@ -26,8 +26,7 @@
                                 </div>
                                 <span><b>@</b></span>
                                 <span class="text-dark" v-text="user.username"></span>
-                                <span v-if="user.id === +me" class="btn btn-outline-dark"
-                                    style="padding: 1px 4px !important;font-size: 10px">ME</span>
+                                <span v-if="user.id === +me" class="btn btn-outline-dark me">ME</span>
                             </div>
                         </div>
                     </div>
@@ -37,9 +36,8 @@
                 <h1>Some Posts</h1>
                 <div v-if="posts !== null && posts.length > 0" class="row">
                     <div v-for="(post, n) in posts" class="col-6 py-1 mb-3">
-                        <div style="height: 185px; overflow: hidden">
-                            <img v-bind:src="getPathImgPost(post.image)" class="w-100 rounded" style="max-height: 185px"
-                                 alt="">
+                        <div class="post-img-container">
+                            <img v-bind:src="getPathImgPost(post.image)" class="w-100 rounded post-img" alt="">
                         </div>
                         <div class="d-flex pt-2">
                             <p class="m-0 pl-2">
@@ -106,8 +104,8 @@
                 return '/post/' + id;
             },
             hideViewSearch() {
-                $('#search-container').css('display', 'none');
-                $('#main-container').css('display', '');
+                $('#search-container').addClass('d-none');
+                $('#main-container').removeClass('d-none');
                 $('#searchInput').val('');
                 sessionStorage.clear();
             },
@@ -123,5 +121,19 @@
 
     .close, .close span {
         outline: none;
+    }
+
+    .me {
+        padding: 1px 4px !important;
+        font-size: 10px
+    }
+
+    .post-img-container {
+        height: 185px;
+        overflow: hidden;
+    }
+
+    .post-img {
+        max-height: 185px;
     }
 </style>

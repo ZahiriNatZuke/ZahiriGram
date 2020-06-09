@@ -12,7 +12,7 @@
                 <div class="row">
                     <div class="col-8 offset-2">
                         <a href="{{route('post.show',['post'=>$post->id])}}">
-                            <img src="/storage/{{$post->image}}" alt="{{explode('/',$post->image)[2]}}" class="w-100"
+                            <img src="/storage/{{$post->image}}" alt="{{explode('/',$post->image)[2]}}" class="w-100 rounded"
                                  style="max-height: 440px">
                         </a>
                     </div>
@@ -43,7 +43,7 @@
                                 </button>
                             </div>
                         </div>
-                        <ul id="list-post-{{ $post->id }}" class="p-2 m-0 list-unstyled mt-2 card"
+                        <ul id="list-post-{{ $post->id }}" class="p-2 m-0 list-unstyled mt-2 card customized-scroll"
                             style="max-height: 150px;overflow-x: paged-x ; overflow-y: scroll;@if($post->comments->count() == 0) display: none; @endif">
                             @for($i = 0; $i < $post->comments->count() && $i < 5; $i++)
                                 <li id="post-{{ $post->id }}-comment-{{ $i }}" class="d-flex">
@@ -54,7 +54,7 @@
                                             </span>
                                         <span class="font-weight-normal pl-1" style="font-size: 13px">
                                             <a class="text-dark"
-                                                href="{{route('profile.show', ['user'=>$post->comments[$i]->user->id])}}">
+                                               href="{{route('profile.show', ['user'=>$post->comments[$i]->user->id])}}">
                                         <b style="font-size: 12px">@</b>{{$post->comments[$i]->user->username}}</a>
                                         </span>
                                     </p>
@@ -98,8 +98,8 @@
                     @endforeach
                 </div>
             </div>
-            <a href="{{ route('post.index') }}" id="next-link" class="text-muted"><i
-                    class="fa fa-arrow-right fa-3x"></i>
+            <a href="{{ route('post.index') }}" id="next-link" class="text-muted">
+                <i class="fa fa-arrow-right fa-3x"></i>
             </a>
         @endif
     </div>
